@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151a22">
+  <meta name="description" content="NexWork, suite bureautique de NexSearch.">
+  <title>NexWork · Espace de travail</title>
+  <style>
+    :root { color-scheme: dark; --bg: #11151c; --panel: #1b222d; --text: #f4f7fb; --muted: #aab5c5; --accent: #73a7ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; padding: 48px 20px; background: radial-gradient(ellipse at top, #202c3b, var(--bg) 60%); color: var(--text); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { width: min(920px, 100%); margin: 0 auto; }
+    header { margin: 28px 0 34px; }
+    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-size: .78rem; }
+    h1 { margin: 8px 0; font-size: clamp(2.4rem, 7vw, 4rem); line-height: 1.05; }
+    header p { margin: 12px 0 0; color: var(--muted); font-size: 1.1rem; }
+    h2 { margin: 32px 0 14px; font-size: 1.25rem; }
+    .apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; }
+    .app { display: block; min-height: 145px; padding: 20px; border: 1px solid #303b4b; border-radius: 16px; background: color-mix(in srgb, var(--panel) 92%, transparent); color: inherit; text-decoration: none; transition: transform .16s ease, border-color .16s ease, background .16s ease; }
+    .app:hover, .app:focus-visible { transform: translateY(-3px); border-color: var(--accent); background: #222d3b; outline: none; }
+    .app strong { display: block; margin-bottom: 7px; font-size: 1.15rem; }
+    .app span { color: var(--muted); }
+    footer { margin-top: 36px; color: var(--muted); font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="eyebrow">NexSearch · Suite bureautique</div>
+      <h1>NexWork</h1>
+      <p>Votre espace de travail. Choisissez une application pour l’ouvrir.</p>
+    </header>
+    <section aria-labelledby="apps-title">
+      <h2 id="apps-title">Applications</h2>
+      <nav class="apps" aria-label="Applications NexWork">
+        <a class="app" href="NexWrite.html"><strong>NexWrite</strong><span>Traitement de texte</span></a>
+        <a class="app" href="NexGrid.html"><strong>NexGrid</strong><span>Tableur</span></a>
+        <a class="app" href="NexPresent.html"><strong>NexPresent</strong><span>Présentations</span></a>
+        <a class="app" href="NexNote.html"><strong>NexNote</strong><span>Notes et blocs-notes</span></a>
+      </nav>
+    </section>
+    <footer>Suite bureautique de NexSearch.</footer>
+  </main>
+</body>
+</html>
